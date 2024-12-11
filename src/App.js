@@ -45,7 +45,7 @@ const App = () => {
 
   const randomizeSelection = () => {
     setIsShuffling(true);
-    shuffleSound.play(); // Play shuffle sound
+    shuffleSound.play();
 
     // Step 1: Shuffle role icons
     let roleShuffleCount = 0;
@@ -113,7 +113,7 @@ const App = () => {
     <div className="flex flex-col items-center bg-gray-900 text-white min-h-screen p-4">
       <h1 className="text-4xl font-bold mb-4">League of Legends Draft</h1>
 
-      {/* Static map image */}
+      
       <div className="relative w-full max-w-3xl">
         <img
           src={require("./img/map.webp")}
