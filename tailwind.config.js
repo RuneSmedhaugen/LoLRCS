@@ -1,16 +1,16 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Include React files
+    "./src/**/*.{js,jsx,ts,tsx}", // Ensure all React files are included
   ],
   theme: {
     extend: {
       animation: {
-        'fade-in': 'fadeIn 0.8s ease-in-out',
+        shuffle: "shuffle 1s linear infinite",
       },
       keyframes: {
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+        shuffle: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
     },
